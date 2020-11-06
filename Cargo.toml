@@ -1,0 +1,18 @@
+[package]
+name = "accounts"
+version = "0.1.0"
+authors = ["Paolo Posso <pvictorsys@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+tokio = { version = "0.3", features = ["full"] }
+mini-redis = "0.3"
+async-injector = "0.11.1"
+uuid = "0.8.1"
+async-trait = "0.1.41"
+serde = "1.0.117"
+
+[dependencies.mongodb]
+version = "1.1.1"
+default-features = false
+features = ["async-std-runtime"]
